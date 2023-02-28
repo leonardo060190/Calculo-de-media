@@ -1,18 +1,12 @@
 function calcular(){
     // valida os campos se eles tiverem preenchidos e permite executar o somar.
    if(validaPrimeiroValor() && validaSegundoValor() && validaTerceiroValor() && validaQuartoValor()){
-//    valor digitado nos campos
-    let valor1 = primeiro.value;
-    let valor2 = segundo.value;
-    let valor3 = terceiro.value;
-    let valor4 = quarto.value;
-    // faz a soma dos valores.
-    let resultado = parseFloat(valor1) + parseFloat(valor2) + parseFloat(valor3)  + parseFloat(valor4);
+     // faz a soma dos valores.
+    let resultado = parseFloat(primeiro.value) + parseFloat(segundo.value) + parseFloat(terceiro.value)  + parseFloat(quarto.value);
     // faz a divisão do resultado para obter a média.
     let mediaTotal = resultado / 4;
     // exibe o resultado.
     total.value = mediaTotal;
-
    };
 };
 // valida o primeiro campo.
